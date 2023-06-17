@@ -1,1 +1,5 @@
+
 {"version":3,"sourceRoot":"","sources":["../sass/components/_gallery.scss","../sass/utils/_extends.scss","../sass/utils/_variables.scss"],"names":[],"mappings":"AAAA,SACI,aACA,iBACA,mBACA,kBAGJ,mBACI,kBAGJ,mBACI,YACA,aAEJ,yBACI,kBACA,UAGA,+BACI,sBAGR,yBACI,kBACA,SACA,WAGA,+BACI,sBAGR,yBACI,kBACA,UACA,WAGA,+BACI,sBAGR,yBACI,kBACA,UACA,WAGA,+BACI,sBAGR,yBACI,kBACA,SACA,WAGA,+BACI,sBAGR,yBACI,kBACA,UACA,WAGA,+BACI,sBAGR,yBACI,kBACA,SACA,WAGA,+BACQ,sBAGZ,yBACI,kBACA,UACA,WAGA,+BACI,sBAGR,0BACI,kBACA,UACA,WAGA,gCACI,sBAIR,iBACI,YACA,aAEJ,uBACI,kBACA,QACA,WAGI,6BACI,sBCpHZ,yEACI,6BACA,8BACA,oBCDO,GDGX,yEACI,8BACA,8BACA,oBCNO,GDQX,kJACI,8BACA,8BACA,oBCXO,GDaX,6CACI,2BACA,8BACA,oBChBO","file":"main.min.css"}
+
+{"version":3,"sourceRoot":"","sources":["../sass/main.scss","../sass/utils/_mixins.sass","../sass/components/_header.scss"],"names":[],"mappings":"AAAQ,qHACA,qHCDR,gBCCA,WAEA,2BACE,iBACA,eACA,cACA,aACA,mBACA,8BFCF,EACE,sBAGF,KACE,iCACA,kBACA,WAGF,GACE,gBAGF,EACE","file":"main.min.css"}
+
