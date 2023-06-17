@@ -8,4 +8,10 @@
   line-height: 21px; 
   color: $color-primary;
   background-color: $color-white;
+  border: none;
+}
+
+.header__button:hover,
+.header__button:focus {
+  background-color: $color-button-hover;
 }
