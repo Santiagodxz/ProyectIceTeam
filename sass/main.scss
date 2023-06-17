@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-
 @import "./utils/variables";
 @import "./utils/mixins";
 @import "./components/header";
 @import "./components/header-nav";
 @import "./components/header-button";
 @import "./components/mobile-menu";
+@import "./components/gallery";
+@import "./utils/extends";
 
 * {
   box-sizing: border-box;
@@ -25,4 +25,3 @@ ul {
 a {
   text-decoration: none;
 }
-
