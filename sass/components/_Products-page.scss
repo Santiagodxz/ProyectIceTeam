@@ -1,0 +1,156 @@
+* {
+    list-style: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.Products {
+    width: 1200px;
+    margin: 0 auto;
+
+    // Text title
+
+    .Products__Ice-container {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 32px;
+        width: 1180px;
+    }
+
+    .Products__Title h2 {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $color-rose;
+    }
+
+    .Products__Title p {
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 58px;
+        line-height: 66px;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: $color-red-title;
+    }
+
+    .Products__Ice {
+        position: relative;
+        top: 360px;
+    }
+
+    .Products__Ice {
+        width: 368px;
+        height: 535px;
+
+        .Products__IceF-CCM {
+            background-color: $color-rose;
+            border-radius: 24px;
+            position: relative;
+        }
+
+        .Products__IceY-CCM {
+            background-color: $color-yellow;
+            border-radius: 24px;
+            position: relative;
+        }
+
+        .Products__IceG-CCM {
+            background-color: $color-green;
+            border-radius: 24px;
+            position: relative;
+        }
+
+        .Products__Name {
+            font-family: 'Titan One';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 34px;
+            text-align: center;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: $color-white;
+            margin-top: 165px;
+            padding: 32px;
+        }
+
+        .Products__Points {
+            display: flex;
+            justify-content: center;
+            font-family: 'Titan One';
+            font-size: 30px;
+            color: $color-white;
+        }
+
+        .Products__Data {
+            display: flex;
+            justify-content: center;
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 176%;
+            text-align: center;
+            letter-spacing: 0.04em;
+            color: $color-white;
+            margin: 0 auto;
+            padding: 32px;
+
+        }
+
+        .Products__Icon-cream {
+            margin: 0 auto;
+            border-radius: 50%;
+            border: none;
+            width: 38.21px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-white;
+            color: red;
+            margin-bottom: 60px;
+        }
+
+        .Products__Ice-img {
+            position: absolute;
+            top: -270px;
+            width: 368px;
+            height: 394px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .Products {
+        width: 100%;
+
+        .Products__Ice-container {
+            width: 100%;
+        }
+
+        .Products__Ice {
+            width: 100%;
+        }
+
+        .Products__IceF-CCM {
+            width: calc(100% / 3 - 32px);
+        }
+
+
+    }
+
+
+
+}
