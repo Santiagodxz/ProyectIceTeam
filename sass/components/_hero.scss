@@ -6,28 +6,95 @@
     @include container;
     padding-top: 150px;
 
-    .hero__title{
+    .hero__left-content{
 
-      
-      .hero__title--white{
-        font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 38px;
-        line-height: 44px;
-        letter-spacing: 0.04em;
-        color: $color-white;
-        margin: auto;
+      .hero__title{
+        .hero__title--white{
+          font-family: 'Titan One';
+          font-weight: 400;
+          font-size: 38px;
+          line-height: 44px;
+          letter-spacing: 0.04em;
+          color: $color-white;
+          margin: auto;
+        }
+  
+        .hero__title--red{
+          font-family: 'Titan One';
+          font-weight: 400;
+          font-size: 60px;
+          line-height: 44px;
+          letter-spacing: 0.04em;
+          color: $color-primary;
+          margin: 0 0 24px 0;
+        }
       }
 
-      .hero__title--red{
-        font-family: 'Titan One';
-        font-weight: 400;
-        font-size: 60px;
-        line-height: 44px;
-        letter-spacing: 0.04em;
-        color: $color-primary;
-        margin: 0 0 24px 0;
+      .hero__button{
+        .hero__button--red{
+          color: $color-white;
+          background-color: $color-primary;
+          height: 40px;
+          border-radius: 20px;
+          padding: 0 23.6px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+        }
+
+        .hero__button--white{
+          color: $color-primary;
+          background-color: $color-white;
+          height: 40px;
+          border-radius: 20px;
+          padding: 0 23.6px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 18px;
+        }
+
+        .hero__button--white:hover,
+        .hero__button--white:focus{
+        background-color: $color-button-hover;
+        }
       }
+
+      .hero__description{
+        @include flex(center);
+        padding-top: 40px;
+
+        .description__img{
+          
+        }
+
+        .description__text{
+          color: $color-white;
+          width: 200px;
+
+          .description__arrow{
+            @include flex(center,center);
+            background-color: $color-white;
+            width: 25px;
+            height: 25px;
+            border-radius: 12.5px;
+
+            .arrow__icon{
+              width: 15px;
+              height: 15px;
+            }
+          }
+        }
+      }
+
+      .hero__icecream{
+
+        .icecream__img{
+          
+        }
+      }
+
     }
+
+    
   }
 }
