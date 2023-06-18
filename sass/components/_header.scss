@@ -1,16 +1,16 @@
-.header{
-  width: 100%; 
-  position: fixed;
+// .header{
+//   width: 100%; 
+//   position: fixed;
 
-  .header__container{
-    @include container;
-    @include flex(center,space-between);
-    padding-top: 38px;
+//   .header__container{
+//     @include container;
+//     @include flex(center,space-between);
+//     padding-top: 38px;
 
-    .header__logo{
-      width: 199px;
-      height: 50px;
-    }
+//     .header__logo{
+//       width: 199px;
+//       height: 50px;
+//     }
 
-  }
-}
+//   }
+// }
