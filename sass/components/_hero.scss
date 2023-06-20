@@ -1,16 +1,19 @@
-.hero{
+.hero {
   background-color: $color-hard-pink;
+  width: 100%;
+  height: 664px;
+  position: relative;
 
-  .hero__container{
-    // @include flex(center, space-between);
+  .hero__container {
+    @include flex(flex-start, space-between);
     @include container;
-    padding-top: 150px;
 
-    .hero__left-content{
+    .hero__left-content {
+      padding-top: 10%;
 
-      .hero__title{
-        .hero__title--white{
-          font-family: 'Titan One';
+      .hero__title {
+        .hero__title--white {
+          font-family: "Titan One";
           font-weight: 400;
           font-size: 38px;
           line-height: 44px;
@@ -18,9 +21,9 @@
           color: $color-white;
           margin: auto;
         }
-  
-        .hero__title--red{
-          font-family: 'Titan One';
+
+        .hero__title--red {
+          font-family: "Titan One";
           font-weight: 400;
           font-size: 60px;
           line-height: 44px;
@@ -30,8 +33,8 @@
         }
       }
 
-      .hero__button{
-        .hero__button--red{
+      .hero__button {
+        .hero__button--red {
           color: $color-white;
           background-color: $color-primary;
           height: 40px;
@@ -42,7 +45,7 @@
           line-height: 18px;
         }
 
-        .hero__button--white{
+        .hero__button--white {
           color: $color-primary;
           background-color: $color-white;
           height: 40px;
@@ -54,47 +57,245 @@
         }
 
         .hero__button--white:hover,
-        .hero__button--white:focus{
-        background-color: $color-button-hover;
+        .hero__button--white:focus {
+          background-color: $color-button-hover;
         }
       }
 
-      .hero__description{
-        @include flex(center);
+      .hero__description {
+        @include flex(center, flex-start);
         padding-top: 40px;
 
-        .description__img{
-          
-        }
-
-        .description__text{
+        .description__text {
           color: $color-white;
           width: 200px;
 
-          .description__arrow{
-            @include flex(center,center);
+          .description__arrow {
+            @include flex(center, center);
             background-color: $color-white;
             width: 25px;
             height: 25px;
             border-radius: 12.5px;
 
-            .arrow__icon{
+            .arrow__icon {
               width: 15px;
               height: 15px;
             }
           }
         }
       }
+    }
 
-      .hero__icecream{
+    .hero__center-content {
+      .hero__icecream {
+        @include flex(center, center);
+        width: 534px;
+        height: 534px;
+        background-color: $color-dark-pink;
+        border-radius: 267px;
+        margin-top: 108px;
 
-        .icecream__img{
-          
+        .icecream__img {
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+
+    .hero__number {
+      @include flex(flex-end, center, column);
+      padding-top: 10%;
+
+      .number__first {
+        text-align: right;
+
+        .number__number {
+          font-family: "Titan One";
+          font-weight: 400;
+          font-size: 46px;
+          line-height: 53px;
+          letter-spacing: 0.04em;
+          color: $color-primary;
+          margin: 0;
+        }
+
+        .number__text {
+          color: $color-white;
+        }
+      }
+    }
+
+    .hero__tasty {
+      position: absolute;
+      bottom: 0;
+      right: 15px;
+    }
+  }
+}
+
+// ----------------- 768 -------------
+
+@include screen-768 {
+  .hero {
+    .hero__container {
+      .hero__left-content {
+        .hero__title {
+          margin-top: 50px;
+          .hero__title--white {
+            font-size: 22px;
+            line-height: 25px;
+          }
+
+          .hero__title--red {
+            font-size: 34px;
+            line-height: 30px;
+          }
+        }
+
+        .hero__button {
+          display: flex;
+          flex-wrap: nowrap;
+          gap: 8px;
+
+          .hero__button--red {
+            font-size: 8px;
+            height: 24px;
+          }
+
+          .hero__button--white {
+            font-size: 8px;
+            height: 24px;
+          }
+        }
+
+        .description__img {
+          width: 70%;
+        }
+
+        .description__text {
+          width: 100%;
+          font-size: 8px;
         }
       }
 
-    }
+      .hero__center-content {
+        .hero__icecream {
+          max-width: 530px;
+          max-height: 534px;
+          min-width: 320px;
+          min-height: 335px;
+          border-radius: 50%;
+          margin-top: 50px;
 
-    
+          .icecream__img {
+            min-width: 152px;
+          }
+        }
+      }
+
+      .hero__number {
+        width: 33.3%;
+
+        .number__first {
+          .number__number {
+            font-size: 28px;
+            line-height: 32px;
+          }
+
+          .number__text {
+            font-size: 8px;
+            line-height: 10px;
+          }
+        }
+      }
+
+      .hero__tasty {
+        width: 25%;
+      }
+    }
+  }
+}
+
+// ------------ 480 -------------
+
+@include screen-480 {
+  .hero {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+
+    .hero__container {
+      @include flex(center, space-between);
+      height: 502px;
+      width: 100%;
+
+      .hero__left-content {
+        z-index: 2;
+
+        .hero__title {
+          .hero__title--white {
+            font-size: 26px;
+            line-height: 29px;
+          }
+
+          .hero__title--red {
+            font-size: 48px;
+            line-height: 46px;
+          }
+        }
+
+        .hero__button {
+          display: flex;
+          flex-wrap: nowrap;
+          gap: 8px;
+
+          .hero__button--red {
+            font-size: 8px;
+            height: 24px;
+          }
+
+          .hero__button--white {
+            font-size: 8px;
+            height: 24px;
+          }
+        }
+
+        .description__img {
+          display: none;
+        }
+
+        .description__text {
+          display: none;
+        }
+      }
+
+      .hero__center-content {
+        position: absolute;
+        z-index: 1;
+        left: 20%;
+
+        .hero__icecream {
+          width: 346px;
+          height: 346px;
+          border-radius: 173px;
+          margin-left: 0px;
+          position: relative;
+
+          .icecream__img {
+            width: 50%;
+            position: absolute;
+            bottom: -10%;
+          }
+        }
+      }
+
+      .hero__number {
+        display: none;
+      }
+
+      .hero__tasty {
+        display: none;
+      }
+    }
   }
 }
