@@ -24,18 +24,34 @@
         
         <nav>
           <div class="header__nav">
-            <a class="nav__link" href="#home">Home</a>
-            <a class="nav__link" href="#products">About us</a>
-            <a class="nav__link" href="#about">How it's made?</a>
-            <a class="nav__link" href="#advantages">Our products</a>
-            <a class="nav__link" href="#contacts">Contact</a>
+            <a class="header-nav__link" href="#home">Home</a>
+            <a class="header-nav__link" href="#products">About us</a>
+            <a class="header-nav__link" href="#about">How it's made?</a>
+            <a class="header-nav__link" href="#advantages">Our products</a>
+            <a class="header-nav__link" href="#contacts">Contact</a>
           </div>
         </nav>
 
+      <div class="header__buttons">
+            <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            >
+            <svg
+              width="24"
+              height="24"
+            >
+            <use href="./img/icons.svg#icon-menu"></use>
+            </svg>
+            </button>
   
-        <button class="header__button" type="button" data-modal-open>Buy now >
-        </div>  
-        </button>
+            <button class="header__buy-button" type="button" data-modal-open>Buy now >
+            
+            </button>
+          </div>
+      </div>
+
     </header>
     
     <main>
@@ -43,6 +59,7 @@
       <section id="hero" class="hero">
 
         <div class="hero__container">
+
           <div class="hero__left-content">
             <div class="hero__title">
               <h3 class="hero__title--white">ICE CREAM</h3>
@@ -68,24 +85,28 @@
             </div>
           </div>
 
-          <div class="hero__icecream">
-              <img class="icecream__img" src="./img/hero/hero-cream.png" alt="six-flavor icecream">
+          <div class="hero__center-content">
+            <div class="hero__icecream">
+                <img class="icecream__img" src="./img/hero/hero-cream.png" alt="six-flavor icecream">
+            </div>
           </div>
 
-          <div class="header__number">
-            <div class="number__first">
-              <h2 class="number__number">16</h2>
-              <p class="number__text">cafes</p>
-            </div>
-            <div class="number__first">
-              <h2 class="number__number">23</h2>
-              <p class="number__text">food trucks</p>
-            </div>
+
+          <div class="hero__number">
+              <div class="number__first">
+                  <h2 class="number__number">16
+                  </h2>
+                  <p class="number__text">cafes</p>
+              </div>
+
+              <div class="number__first">
+                  <h2 class="number__number">23</h2>
+                  <p class="number__text">food trucks</p>
+              </div>
           </div>
 
           <img class="hero__tasty" src="./img/hero/hero-tasty.png" alt="a girl eating an icecream">
         </div>
-
       </section>
 
       <!-- ------ Products Section ----- -->
@@ -159,6 +180,87 @@
       <!-- ------ Contacts Section ----- -->
       <section id="contacts" class="contacts"></section>
     </main>
-    <footer></footer>
+
+
+    <!-- -----------Footer---------- -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__button">
+          <button class="button__red" type="button">Our Locations ></button>
+          <button class="button__white" type="button">Franchise ></button>
+        </div>
+
+        <div class="footer__info">
+
+          <div class="footer__text">
+            <h3 class="footer__text footer__text--small">HOMEMADE ICE CREAM MADE</h3>
+            <h2 class="footer__text footer__text--big">WITH PASSION</h2>
+          </div>
+
+          <div class="footer__contact">
+            <div class="contact__social">
+              <a class="social__link" href="#">
+                <svg class="social__icon">
+                  <use href="./img/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+              <a class="social__link" href="#">
+                <svg class="social__icon">
+                  <use href="./img/icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+              <a class="social__link" href="#">
+                <svg class="social__icon">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="contact__phone">Feel free to contact<span class="phone--red">+61 (0) 383 766 284</span>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="footer__copy">© 2022 - IceCream. All Rights Reserved. </div>
+      </div>
+
+    </footer>
+
+<!-- ------------Mobile - menu  -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <button class="mobile-menu__buy-button" type="button" data-modal-open>Buy now >
+            
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="#home" class="link">Home</a></li>
+        <li><a href="#products" class="link">About us</a></li>
+        <li><a href="#about" class="link">How it`s made?</a></li>
+        <li><a href="#advantages" class="link">Our products</a></li>
+        <li><a href="#contacs" class="link">Contact</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

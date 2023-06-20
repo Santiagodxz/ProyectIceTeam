@@ -1,15 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
 
 @import "./utils/variables";
 @import "./utils/mixins";
 
 @import "./components/header";
 @import "./components/header-nav";
+
 @import "./components/header-button";
 // @import "./components/hero";
+
+@import "./components/header-buttons";
+@import "./components/hero";
+
 @import "./components/mobile-menu";
 @import "./components/gallery";
+@import "./components/footer";
 @import "./utils/extends";
 
 * {
@@ -17,7 +23,7 @@
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-style: normal;
   width: 100%;
 }
