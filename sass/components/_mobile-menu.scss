@@ -32,7 +32,6 @@
   outline: none;
 }
 
-
 .menu-toggle:hover,
 .menu-toggle:focus {
   background-color: rgba(0, 0, 0, 0.1);
@@ -77,14 +76,13 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-  border: 1px solid #E18298;
+  border: 1px solid #e18298;
 }
-
 
 // ------------ Desk 1280 --------------
 
 @include screen-1280 {
-  .menu-toggle{
+  .menu-toggle {
     display: none;
   }
 
@@ -92,23 +90,21 @@
     display: none;
   }
 
-  .menu-container{
+  .menu-container {
     display: none;
   }
-
 }
 
-.mobile-menu__buy-button{
-    width: 100%;
-    min-width: 186px;
-    height: 44px;
-    border-radius: 22px;
-  
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px; 
-    color: $color-primary;
-    background-color: $color-white;
-    margin: 54px auto 20px;
-}
+.mobile-menu__buy-button {
+  width: 100%;
+  min-width: 186px;
+  height: 44px;
+  border-radius: 22px;
 
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: $color-primary;
+  background-color: $color-white;
+  margin: 54px auto 20px;
+}

@@ -1,23 +1,34 @@
-  .header__buy-button{
-    width: 159px;
-    height: 44px;
-    border-radius: 22px;
-  
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21px; 
-    color: $color-primary;
-    background-color: $color-white;
-  }
-  
-  .header__buy-button:hover,
-  .header__buy-button:focus {
-    background-color: $color-button-hover;
-  }
+.header__buy-button {
+  width: 159px;
+  height: 44px;
+  border-radius: 22px;
 
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: $color-primary;
+  background-color: $color-white;
+}
+
+.header__buy-button:hover,
+.header__buy-button:focus {
+  background-color: $color-button-hover;
+}
+
+// ---------- screen 768----------
+@include screen-768 {
+  .header__buttons {
+    display: flex;
+    gap: 10px;
+  }
+}
 
 // ---------- screen 768----------
 
-.header__buttons{
-  display: flex;
+@include screen-480 {
+  .header__buttons {
+    .header__buy-button {
+      display: none;
+    }
+  }
 }

@@ -1,119 +1,119 @@
 .gallery {
-    width: 1280px;
-    margin-top: 100px;
-    padding-right: 93px;
-    padding-left: 93px;
+  width: 1280px;
+  margin-top: 100px;
+  padding-right: 93px;
+  padding-left: 93px;
 }
 
 .gallery_container {
-    position: relative;
+  position: relative;
 }
 
 .gallery_img-small {
-    width: 138px;
-    height: 138px;
+  width: 138px;
+  height: 138px;
 }
 .gallery_img-small--img1 {
-    position: absolute;
-    top: 142px;
-    @extend .position-center-right;
-    
-    &:hover {
-        transform: scale($scale);
-    }
+  position: absolute;
+  top: 142px;
+  @extend .position-center-right;
+
+  &:hover {
+    transform: scale($scale);
+  }
 }
 .gallery_img-small--img2 {
-    position: absolute;
-    top: 88px;
-    left: 146px;
-    @extend .position-botton-right;
-    
-    &:hover {
-        transform: scale($scale);
-    }
+  position: absolute;
+  top: 88px;
+  left: 146px;
+  @extend .position-botton-right;
+
+  &:hover {
+    transform: scale($scale);
+  }
 }
 .gallery_img-small--img3 {
-    position: absolute;
-    top: 233px;
-    left: 146px;
-    @extend .position-botton-right;
-    
-    &:hover {
-        transform: scale($scale);
-    }
+  position: absolute;
+  top: 233px;
+  left: 146px;
+  @extend .position-botton-right;
+
+  &:hover {
+    transform: scale($scale);
+  }
 }
 .gallery_img-small--img5 {
-    position: absolute;
-    top: 292px;
-    left: 292px;
-    @extend .position-center-left;
-    
-    &:hover {
-        transform: scale($scale);
-    }
+  position: absolute;
+  top: 292px;
+  left: 292px;
+  @extend .position-center-left;
+
+  &:hover {
+    transform: scale($scale);
+  }
 }
 .gallery_img-small--img6 {
-    position: absolute;
-    top: 98px;
-    left: 583px;
-    @extend .position-botton-right;
-    
-    &:hover {
-        transform: scale($scale);
-    }
+  position: absolute;
+  top: 98px;
+  left: 583px;
+  @extend .position-botton-right;
+
+  &:hover {
+    transform: scale($scale);
+  }
 }
 .gallery_img-small--img7 {
-    position: absolute;
-    top: 245px;
-    left: 582px;
-    @extend .position-center-right;
-    
-    &:hover {
-        transform: scale($scale);
-    }
+  position: absolute;
+  top: 245px;
+  left: 582px;
+  @extend .position-center-right;
+
+  &:hover {
+    transform: scale($scale);
+  }
 }
 .gallery_img-small--img8 {
-    position: absolute;
-    top: 65px;
-    left: 729px;
-    @extend .position-botton-right;
-    
-    &:hover {
-            transform: scale($scale);
-        }
+  position: absolute;
+  top: 65px;
+  left: 729px;
+  @extend .position-botton-right;
+
+  &:hover {
+    transform: scale($scale);
+  }
 }
 .gallery_img-small--img9 {
-    position: absolute;
-    top: 212px;
-    left: 729px;
-    @extend .position-top-right;
+  position: absolute;
+  top: 212px;
+  left: 729px;
+  @extend .position-top-right;
 
-    &:hover {
-        transform: scale($scale);
-    }
+  &:hover {
+    transform: scale($scale);
+  }
 }
 .gallery_img-small--img10 {
-    position: absolute;
-    top: 154px;
-    left: 875px;
-    @extend .position-center-left;
+  position: absolute;
+  top: 154px;
+  left: 875px;
+  @extend .position-center-left;
 
-    &:hover {
-        transform: scale($scale);
-    }
+  &:hover {
+    transform: scale($scale);
+  }
 }
 
 .gallery_img-big {
-    width: 283px;
-    height: 283px;
+  width: 283px;
+  height: 283px;
 }
 .gallery_img-big--img4 {
-    position: absolute;
-    top: 0px;
-    left: 292px;
-    @extend .position-botton-right;
-    
-        &:hover {
-            transform: scale($scale);
-        }
+  position: absolute;
+  top: 0px;
+  left: 292px;
+  @extend .position-botton-right;
+
+  &:hover {
+    transform: scale($scale);
+  }
 }
