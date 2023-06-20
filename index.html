@@ -99,7 +99,7 @@
           <div class="Products__Ice">
             <ul class="Products__Ice-container">
               <li class="Products__IceF-CCM">
-                <img class="Products__Ice-img" src="./img/products/Fresa-1.png">
+                <img class="Products__Ice-img" srcset="./img/products/Strawberry-v1.png 1200w, ./img/products/Strawberry-v2.png 600w , ./img/products/Strawberry-v3.png 300w" src="./img/products/Strawberry-v1.png">
                 <h2 class="Products__Name">ice cream</h2>
                 <span class="Products__Points">...</span>
                 <p class="Products__Data">
@@ -111,7 +111,14 @@
                 </button>
               </li>
               <li class="Products__IceY-CCM">
-                <img class="Products__Ice-img" src="./img/products/crema-2.png">
+                <picture>
+                  <source srcset="./img/products/Strawberry-v1.png 1x, ./img/products/Strawberry-v1@2x.png 2x" media="(min-width: 1200px)"> 
+
+                  <source srcset="./img/products/Strawberry-v2.png 1x, ./img/products/Strawberry-v2@2x.png 2x" media="(min-width: 768px)">
+
+                  <img class="Products__Ice-img" srcset="./img/products/Strawberry-v3.png 1x, ./img/products/Strawberry-v3@2x.png 2x
+                    " src="./img/products/Strawberry-v3.png">
+                </picture>
                 <h2 class="Products__Name">ice cream</h2>
                 <span class="Products__Points">...</span>
                 <p class="Products__Data">
@@ -123,7 +130,7 @@
                 </button>
               </li>
               <li class="Products__IceG-CCM">
-                <img class="Products__Ice-img" src="./img/products/coffe-3.png">
+                <img class="Products__Ice-img" srcset="./img/products/Chocolate-v1.png 1200w, ./img/products/Chocolate-v2.png 600w, ./img/products/Chocolate-v3.png 300w" src="./img/products/Chocolate-v1.png">
                 <h2 class="Products__Name">ice cream</h2>
                 <span class="Products__Points">...</span>
                 <p class="Products__Data">
