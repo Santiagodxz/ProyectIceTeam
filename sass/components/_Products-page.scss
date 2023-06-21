@@ -8,6 +8,7 @@
 .Products {
     width: 1200px;
     margin: 0 auto;
+    
 
     /* Text title */
 
@@ -17,6 +18,11 @@
         margin: 0 auto;
         gap: 32px;
         width: 1180px;
+        flex-wrap: wrap;
+    }
+
+    .Products__Title{
+        width: 100%;
     }
 
     .Products__Title h2 {
@@ -45,29 +51,36 @@
 
     .Products__Ice {
         position: relative;
-        top: 360px;
+        margin-top: 200px;
     }
 
     .Products__Ice {
         width: 368px;
         height: 535px;
+        margin-top: 320px;
 
         .Products__IceF-CCM {
             background-color: $color-rose;
             border-radius: 24px;
             position: relative;
+            width: 368px;
+            height: 535px;
         }
 
         .Products__IceY-CCM {
             background-color: $color-yellow;
             border-radius: 24px;
             position: relative;
+            width: 368px;
+            height: 535px;
         }
 
         .Products__IceG-CCM {
             background-color: $color-green;
             border-radius: 24px;
             position: relative;
+            width: 368px;
+            height: 535px;
         }
 
         .Products__Name {
@@ -90,6 +103,8 @@
             font-family: 'Titan One';
             font-size: 30px;
             color: $color-white;
+            line-height: 6px;
+            margin-bottom: 32px;
         }
 
         .Products__Data {
@@ -124,7 +139,7 @@
 
         .Products__Ice-img {
             position: absolute;
-            top: -270px;
+            bottom: 450px;
         }
     }
 }
@@ -135,86 +150,114 @@
         width: 100%;
 
         .Products__Ice-container {
-            width: 100%;
+            width: 768px;
+            gap: 16px;
         }
 
         .Products__Ice {
             width: 100%;
+
+            .Products__IceF-CCM {
+                width: 224px;
+            }
+        
+            .Products__IceY-CCM {
+                width: 224px;
+            }
+        
+            .Products__IceG-CCM {
+                width: 224px;
+            }
+
+            .Products__Ice-img{
+                width: 100%;
+                bottom: 450px;
+            }
+
+            .Products__Name {
+                font-size: 20px;
+                margin-top: 118px;
+            }
+
+            .Products__Data{
+                font-size: 14px;
+                padding: 0px 18px;
+                margin-bottom: 40px ;
+            }
+
+            .Products__Icon-cream{
+                margin-bottom: 40px;
+            }
         }
 
-        .Products__IceF-CCM {
-            width: calc(1200px / 3 - 32px);
-        }
 
-        .Products__IceY-CCM {
-            width: calc(1200px / 3 - 32px);
-        }
-
-        .Products__IceG-CCM {
-            width: calc(1200px / 3 - 32px);
-        }
 
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
 
     .Products {
         width: 100%;
 
         .Products__Ice-container {
-            width: 100%;
+            width: 480px;
+            gap: 140px;
         }
 
         .Products__Ice {
             width: 100%;
+            
+            .Products__Ice-img {
+            bottom: 430px;
         }
 
         .Products__IceF-CCM {
-            width: calc(767px / 3 - 32px);
+            width: 280px;
         }
 
         .Products__IceY-CCM {
-            width: calc(767px / 3 - 32px);
+            width: 280px;
         }
 
         .Products__IceG-CCM {
-            width: calc(767px / 3 - 32px);
+            width: 280px;
         }
+        }
+
     }
 }
 
 @media screen and (max-width: 480px) {
 
     .Products {
-        width: 480px;
+        width: 100%;
 
         .Products__Title h2 {
-            font-size: 18px;
+                font-size: 18px;
+            }
+        
+            .Products__Title p {
+                font-size: 34px;
+            }
+        
+            .Products__Ice-container {
+                width: 100%;
+                margin: 0 auto;
+                gap: 160px;
+            }
+        
+            .Products__IceF-CCM {
+                width: 360px;
+            }
+        
+            .Products__IceY-CCM {
+                width: 360px;
+            }
+        
+            .Products__IceG-CCM {
+                width: 360px;
+            }
         }
-
-        .Products__Title p {
-            font-size: 34px;
-        }
-
-        .Products__Ice-container {
-            width: 75%;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .Products__IceF-CCM {
-            width: 360px;
-            margin-bottom: 225px;
-        }
-
-        .Products__IceY-CCM {
-            width: 360px;
-            margin-bottom: 235px;
-        }
-
-        .Products__IceG-CCM {
-            width: 360px;
-        }
-    }
+        
 }
