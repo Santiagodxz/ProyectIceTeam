@@ -112,7 +112,7 @@
 
 @media screen and (min-width: 769px) and (max-width: 1280px) {
     .gallery {
-        margin-top: 93px;
+        height: 459px;
         padding-right: 7.8%;
         padding-left: 7.8%;
     }
@@ -121,7 +121,7 @@
 @media screen and (min-width: 480px) and (max-width: 768px) {
 
     .gallery {
-        margin-top: 18px;
+        height: 326px;
     }
 
     .gallery_img-small {
@@ -186,7 +186,7 @@
 @media screen and (max-width: 479px) {
 
     .gallery {
-        margin-top: 39px;
+        height: 204px;
     }
 
     .gallery_img-small {
