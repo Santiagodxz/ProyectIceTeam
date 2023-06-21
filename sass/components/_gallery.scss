@@ -1,119 +1,249 @@
-.gallery {
-  width: 1280px;
-  margin-top: 100px;
-  padding-right: 93px;
-  padding-left: 93px;
-}
-
 .gallery_container {
-  position: relative;
+    position: relative;
 }
 
 .gallery_img-small {
-  width: 138px;
-  height: 138px;
+    width: 13.6%;
+    height: auto;
 }
 .gallery_img-small--img1 {
-  position: absolute;
-  top: 142px;
-  @extend .position-center-right;
-
-  &:hover {
-    transform: scale($scale);
-  }
+    position: absolute;
+    top: 151px;
+    @extend .position-center-right;
+    
+    &:hover {
+        transform: scale($scale);
+    }
 }
 .gallery_img-small--img2 {
-  position: absolute;
-  top: 88px;
-  left: 146px;
-  @extend .position-botton-right;
-
-  &:hover {
-    transform: scale($scale);
-  }
+    position: absolute;
+    top: 93px;
+    left: 14.4%;
+    @extend .position-botton-right;
+    
+    &:hover {
+        transform: scale($scale);
+    }
 }
 .gallery_img-small--img3 {
-  position: absolute;
-  top: 233px;
-  left: 146px;
-  @extend .position-botton-right;
-
-  &:hover {
-    transform: scale($scale);
-  }
+    position: absolute;
+    top: 248px;
+    left: 14.4%;
+    @extend .position-botton-right;
+    
+    &:hover {
+        transform: scale($scale);
+    }
 }
 .gallery_img-small--img5 {
-  position: absolute;
-  top: 292px;
-  left: 292px;
-  @extend .position-center-left;
-
-  &:hover {
-    transform: scale($scale);
-  }
+    position: absolute;
+    top: 311px;
+    left: 28.8%;
+    @extend .position-center-left;
+    
+    &:hover {
+        transform: scale($scale);
+    }
 }
 .gallery_img-small--img6 {
-  position: absolute;
-  top: 98px;
-  left: 583px;
-  @extend .position-botton-right;
-
-  &:hover {
-    transform: scale($scale);
-  }
+    position: absolute;
+    top: 104px;
+    left: 57.6%;
+    @extend .position-botton-right;
+    
+    &:hover {
+        transform: scale($scale);
+    }
 }
 .gallery_img-small--img7 {
-  position: absolute;
-  top: 245px;
-  left: 582px;
-  @extend .position-center-right;
-
-  &:hover {
-    transform: scale($scale);
-  }
+    position: absolute;
+    top: 261px;
+    left: 57.5%;
+    @extend .position-center-right;
+    
+    &:hover {
+        transform: scale($scale);
+    }
 }
 .gallery_img-small--img8 {
-  position: absolute;
-  top: 65px;
-  left: 729px;
-  @extend .position-botton-right;
-
-  &:hover {
-    transform: scale($scale);
-  }
+    position: absolute;
+    top: 69px;
+    left: 72%;
+    @extend .position-botton-right;
+    
+    &:hover {
+            transform: scale($scale);
+        }
 }
 .gallery_img-small--img9 {
-  position: absolute;
-  top: 212px;
-  left: 729px;
-  @extend .position-top-right;
+    position: absolute;
+    top: 226px;
+    left: 72%;
+    @extend .position-top-right;
 
-  &:hover {
-    transform: scale($scale);
-  }
+    &:hover {
+        transform: scale($scale);
+    }
 }
 .gallery_img-small--img10 {
-  position: absolute;
-  top: 154px;
-  left: 875px;
-  @extend .position-center-left;
+    position: absolute;
+    top: 164px;
+    left: 86.4%;
+    @extend .position-center-left;
 
-  &:hover {
-    transform: scale($scale);
-  }
+    &:hover {
+        transform: scale($scale);
+    }
 }
 
 .gallery_img-big {
-  width: 283px;
-  height: 283px;
+    width: 27.9%;
+    height: auto;
 }
 .gallery_img-big--img4 {
-  position: absolute;
-  top: 0px;
-  left: 292px;
-  @extend .position-botton-right;
+    position: absolute;
+    left: 28.8%;
+    @extend .position-botton-right;
+    
+        &:hover {
+            transform: scale($scale);
+        }
+}
 
-  &:hover {
-    transform: scale($scale);
-  }
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+    .gallery {
+        margin-top: 93px;
+        padding-right: 7.8%;
+        padding-left: 7.8%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+    .gallery {
+        margin-top: 18px;
+    }
+
+    .gallery_img-small {
+        width: 13.5%;
+        height: auto;
+    }
+    .gallery_img-small--img1 {
+        position: absolute;
+        top: 108px;
+    }
+    .gallery_img-small--img2 {
+        position: absolute;
+        top: 67px;
+        left: 14.3%;
+    }
+    .gallery_img-small--img3 {
+        position: absolute;
+        top: 176px;
+        left: 14.3%;
+    }
+    .gallery_img-small--img5 {
+        position: absolute;
+        top: 220px;
+        left: 28.8%;
+    }
+    .gallery_img-small--img6 {
+        position: absolute;
+        top: 74px;
+        left: 57.6%;
+    }
+    .gallery_img-small--img7 {
+        position: absolute;
+        top: 186px;
+        left: 57.4%;
+    }
+    .gallery_img-small--img8 {
+        position: absolute;
+        top: 49px;
+        left: 71.9%;
+    }
+    .gallery_img-small--img9 {
+        position: absolute;
+        top: 161px;
+        left: 71.9%;
+    }
+    .gallery_img-small--img10 {
+        position: absolute;
+        top: 117px;
+        left: 86.3%;
+    }
+
+    .gallery_img-big {
+        width: 27.9%;
+        height: auto;
+    }
+    .gallery_img-big--img4 {
+        position: absolute;
+        left: 28.8%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+
+    .gallery {
+        margin-top: 39px;
+    }
+
+    .gallery_img-small {
+        width: 13.4%;
+        height: auto;
+    }
+    .gallery_img-small--img1 {
+        position: absolute;
+        top: 67px;
+    }
+    .gallery_img-small--img2 {
+        position: absolute;
+        top: 42px;
+        left: 14.4%;
+    }
+    .gallery_img-small--img3 {
+        position: absolute;
+        top: 109px;
+        left: 14.4%;
+    }
+    .gallery_img-small--img5 {
+        position: absolute;
+        top: 137px;
+        left: 28.8%;
+    }
+    .gallery_img-small--img6 {
+        position: absolute;
+        top: 46px;
+        left: 57.5%;
+    }
+    .gallery_img-small--img7 {
+        position: absolute;
+        top: 115px;
+        left: 57.2%;
+    }
+    .gallery_img-small--img8 {
+        position: absolute;
+        top: 29px;
+        left: 71.9%;
+    }
+    .gallery_img-small--img9 {
+        position: absolute;
+        top: 100px;
+        left: 71.9%;
+    }
+    .gallery_img-small--img10 {
+        position: absolute;
+        top: 71px;
+        left: 86.3%;
+    }
+
+    .gallery_img-big {
+        width: 27.8%;
+        height: auto;
+    }
+    .gallery_img-big--img4 {
+        position: absolute;
+        left: 28.8%;
+    }
 }
