@@ -1,5 +1,7 @@
 .footer {
   background-color: $color-footer;
+  padding-top: 60px;
+
 
   .footer__container {
     @include container;

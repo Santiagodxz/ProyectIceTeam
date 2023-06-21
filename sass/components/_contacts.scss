@@ -1,0 +1,119 @@
+.contacts{
+background-image: linear-gradient(
+to top,
+$color-footer, 
+$color-white);
+  padding-top: 30px;
+
+
+.contacts__container {
+  @include container;
+  @include flex(center, flex-start);
+  gap: 32px;
+
+  .contacts__target {
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px;
+
+    .target__title {
+      width: 73px;
+      border-radius: 6px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 186%;
+      letter-spacing: 0.04em;
+      color: $color-white;
+      text-align: center;
+    }
+
+    .target__title--cafe {
+      background-color: #f0d1a5;
+    }
+
+    .target__title--green {
+      background-color: #c2e297;
+      width: 138px;
+    }
+
+    .target__subtitle {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 186%;
+      letter-spacing: 0.04em;
+    }
+
+    .target__text {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 183%;
+      letter-spacing: 0.04em;
+      color: #907e82;
+    }
+
+    .target__line{
+      border: 1px solid #E1E1E1;
+    }
+
+    .target__hour{
+      color: #FFA5BA;
+    }
+  }
+}
+}
+
+// -------------screen 768----------
+
+@include screen-768 {
+  .contacts
+  .contacts__container{
+    .contacts__target{
+
+      .target__title{
+        font-size: 14px;
+        line-height: 166%;
+      }
+      .target__subtitle{
+        font-size: 14px;
+        line-height: 166%;
+      }
+      .target__text{
+        font-size: 14px;
+        line-height: 166%;
+      }
+      .target__hour{
+        font-size: 14px;
+        line-height: 166%;
+      }
+    }
+  }
+}
+
+// -----------screen 480----------
+
+@include screen-480 {
+  .contacts
+  .contacts__container{
+    flex-wrap: wrap;
+justify-content: center;
+    .contacts__target{
+
+      .target__title{
+        font-size: 12px;
+        line-height: 150%;
+      }
+      .target__subtitle{
+        font-size: 12px;
+        line-height: 150%;
+      }
+      .target__text{
+        font-size: 12px;
+        line-height: 150%;
+      }
+      .target__hour{
+        font-size: 12px;
+        line-height: 150%;
+      }
+    }
+  }
+}
