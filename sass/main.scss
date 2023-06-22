@@ -1,1 +1,21 @@
+@import url('https://fonts.googleapis.com/css2? family= Titan+One & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= DM+Sans:wght@500;700 & display=swap');
 @import "./utils/variables";
+@import "./components/section-about";
+@import "./utils/mixins";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+    font-family: "DM+Sans", sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+ul { 
+    list-style: none ;
+}
+li {
+    list-style: none;
+}
