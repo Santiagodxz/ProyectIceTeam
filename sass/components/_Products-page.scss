@@ -8,6 +8,11 @@
 .Products {
     width: 1200px;
     margin: 0 auto;
+
+    .Products__container{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
     
 
     /* Text title */
@@ -19,6 +24,7 @@
         gap: 32px;
         width: 1180px;
         flex-wrap: wrap;
+        position: relative;
     }
 
     .Products__Title{
@@ -193,6 +199,8 @@
 
 
     }
+
+    // Effects
 }
 
 @media screen and (max-width: 768px) {
