@@ -3,6 +3,7 @@
 
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/extends";
 @import "./components/header";
 @import "./components/header-nav";
 @import "./components/header-buttons";
@@ -10,6 +11,7 @@
 @import "./components/mobile-menu";
 @import "./components/footer";
 @import './components/contacts';
+@import './components/gallery';
 
 * {
   box-sizing: border-box;
