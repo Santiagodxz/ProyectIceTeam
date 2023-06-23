@@ -3,17 +3,15 @@
 
 @import "./utils/variables";
 @import "./utils/mixins";
-
+@import "./utils/extends";
 @import "./components/header";
 @import "./components/header-nav";
-
 @import "./components/header-buttons";
 @import "./components/hero";
-
 @import "./components/mobile-menu";
-@import "./components/gallery";
 @import "./components/footer";
-@import "./utils/extends";
+@import './components/contacts';
+@import './components/gallery';
 
 * {
   box-sizing: border-box;
