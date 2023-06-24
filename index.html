@@ -7,17 +7,113 @@
 
     <link rel="stylesheet" href="./css/modern-normalize.css" />
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="./images/icons.svg" />
+    <link rel="stylesheet" href="./img/icons.svg" />
 
     <title>IceCream</title>
   </head>
   <body>
     <!-- ------- Header Section ----- -->
-    <header id="header" class="header"></header>
+    <header id="header" class="header">
+      <div class="header__container">
+        <a href="./index.html">
+          <svg class="header__logo">
+            <use href="./img/icons.svg#icon-logo"></use>
+          </svg>
+        </a>
+
+        <nav>
+          <div class="header__nav">
+            <a class="header-nav__link" href="#home">Home</a>
+            <a class="header-nav__link" href="#products">About us</a>
+            <a class="header-nav__link" href="#about">How it's made?</a>
+            <a class="header-nav__link" href="#advantages">Our products</a>
+            <a class="header-nav__link" href="#contacts">Contact</a>
+          </div>
+        </nav>
+
+        <div class="header__buttons">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="24" height="24">
+              <use href="./img/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+
+          <button class="header__buy-button" type="button" data-modal-open>
+            Buy now >
+          </button>
+        </div>
+      </div>
+    </header>
 
     <main>
-      <!-- ------ Hero Section ----- -->
-      <section id="hero" class="hero"></section>
+      <!-- ------ Hero Section ----- TERMINADA -->
+      <section id="hero" class="hero">
+        <div class="hero__container">
+          <div class="hero__left-content">
+            <div class="hero__title">
+              <h3 class="hero__title--white">ICE CREAM</h3>
+              <h3 class="hero__title--white">MADE WITH</h3>
+              <h2 class="hero__title--red">PASSION</h2>
+            </div>
+
+            <div class="hero__button">
+              <button class="hero__button--red" type="button">Products</button>
+              <button class="hero__button--white" type="button">
+                How it`s made?
+              </button>
+            </div>
+
+            <div class="hero__description">
+              <img
+                class="description__img"
+                src="./img/hero/hero-milk.png"
+                alt="milk jug"
+              />
+              <div class="description__text">
+                <p>
+                  Indulge in a scoop of ice cream made with passion and treat
+                  your taste buds to an unforgettable experience!
+                </p>
+                <a class="description__arrow" href="#">
+                  <svg class="arrow__icon">
+                    <use href="./img/icons.svg#icon-arrowright"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__center-content">
+            <div class="hero__icecream">
+              <img
+                class="icecream__img"
+                src="./img/hero/hero-cream.png"
+                alt="six-flavor icecream"
+              />
+            </div>
+          </div>
+
+          <div class="hero__number">
+            <div class="number__first">
+              <h2 class="number__number">16</h2>
+              <p class="number__text">cafes</p>
+            </div>
+
+            <div class="number__first">
+              <h2 class="number__number">23</h2>
+              <p class="number__text">food trucks</p>
+            </div>
+          </div>
+
+          <div class="hero__tasty">
+          <img class="tasty__img" src="./img/hero/hero-tasty.png" alt="a girl eating an icecream">
+          </div>
+        </div>
+      </section>
 
       <!-- ------ Products Section ----- -->
       <section id="products" class="products"></section>
@@ -105,14 +201,351 @@
       <section id="advantages" class="advantages"></section>
 
       <!-- ------ Gallery Section ----- -->
-      <section id="gallery" class="gallery"></section>
+      <section id="gallery" class="gallery">
+        <div class="gallery_container">
+          <img
+            class="gallery_img-small gallery_img-small--img1"
+            src="./img/gallery/pic1.png"
+            alt="pictureOne"
+          />
+          <img
+            class="gallery_img-small gallery_img-small--img2"
+            src="./img/gallery/pic2.png"
+            alt="pictureTwo"
+          />
+          <img
+            class="gallery_img-small gallery_img-small--img3"
+            src="./img/gallery/pic3.png"
+            alt="pictureThree"
+          />
+          <img
+            class="gallery_img-big gallery_img-big--img4"
+            src="./img/gallery/pic4.png"
+            alt="pictureFour"
+          />
+          <img
+            class="gallery_img-small gallery_img-small--img5"
+            src="./img/gallery/pic5.png"
+            alt="pictureFive"
+          />
+          <img
+            class="gallery_img-small gallery_img-small--img6"
+            src="./img/gallery/pic6.png"
+            alt="pictureSix"
+          />
+          <img
+            class="gallery_img-small gallery_img-small--img7"
+            src="./img/gallery/pic7.png"
+            alt="pictureSeven"
+          />
+          <img
+            class="gallery_img-small gallery_img-small--img8"
+            src="./img/gallery/pic8.png"
+            alt="pictureeight"
+          />
+          <img
+            class="gallery_img-small gallery_img-small--img9"
+            src="./img/gallery/pic9.png"
+            alt="pictureNine"
+          />
+          <img
+            class="gallery_img-small gallery_img-small--img10"
+            src="./img/gallery/pic10.png"
+            alt="pictureTen"
+          />
+        </div>
+      </section>
 
       <!-- ------ Customer Reviews Section ----- -->
-      <section id="customer" class="customer"></section>
+      <section id="customer" class="customer">
+        <div class="container">
+          <div class="testimonials">
+            <div class="testimonial" id="testimonial__first">
+              <img
+                class="photo"
+                src="./img/coments/testimonial1.jpg"
+                alt="testimonials1"
+              />
 
-      <!-- ------ Contacts Section ----- -->
-      <section id="contacts" class="contacts"></section>
+              <div class="coment">
+                <svg class="coment__icon">
+                  <use href="./img/icons.svg#icon__coments"></use>
+                </svg>
+                <p class="coment__text">
+                  I love visiting your cafe. You prepare the most delicious ice
+                  cream in Los Angeles! In addition, you have beautiful serving,
+                  cozy atmosphere and polite staff.
+                </p>
+              </div>
+
+              <ul class="points__elements">
+                <li class="point__sub__element"></li>
+                <li class="point__sub__element"></li>
+                <li class="point__sub__element"></li>
+              </ul>
+
+              <h3>Shophie, Los Angeles</h3>
+
+              <ul class="bar__buttons">
+                <li class="button__coment__home">
+                  <svg>
+                    <use href="./img/icons.svg#icon__coments__home"></use>
+                  </svg>
+                </li>
+
+                <li class="button__container">
+                  <a href="#testimonial__second">
+                    <svg class="button__coment">
+                      <use href="./img/icons.svg#icon__button"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="button__container">
+                  <a href="#testimonial__third">
+                    <svg class="button__coment">
+                      <use href="./img/icons.svg#icon__button"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="testimonial" id="testimonial__second">
+              <img
+                class="photo"
+                src="./img/coments/testimonial2.jpg"
+                alt="testimonials1"
+              />
+
+              <div class="coment">
+                <svg class="coment__icon">
+                  <use href="./img/icons.svg#icon__coments"></use>
+                </svg>
+                <p class="coment__text">
+                  I love visiting your cafe. You prepare the most delicious ice
+                  cream in Los Angeles! In addition, you have beautiful serving,
+                  cozy atmosphere and polite staff.
+                </p>
+              </div>
+
+              <ul class="points__elements">
+                <li class="point__sub__element"></li>
+                <li class="point__sub__element"></li>
+                <li class="point__sub__element"></li>
+              </ul>
+
+              <h3>Emily, Los Angeles</h3>
+
+              <ul class="bar__buttons">
+                <li class="button__container">
+                  <a href="#testimonial__first">
+                    <svg class="button__coment">
+                      <use href="./img/icons.svg#icon__button"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="button__coment__home">
+                  <svg>
+                    <use href="./img/icons.svg#icon__coments__home"></use>
+                  </svg>
+                </li>
+
+                <li class="button__container">
+                  <a href="#testimonial__third">
+                    <svg class="button__coment">
+                      <use href="./img/icons.svg#icon__button"></use>
+                    </svg>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+            <div class="testimonial" id="testimonial__third">
+              <img
+                class="photo"
+                src="./img/coments/testimonial3.jpg"
+                alt="testimonials1"
+              />
+
+              <div class="coment">
+                <svg class="coment__icon">
+                  <use href="./img/icons.svg#icon__coments"></use>
+                </svg>
+                <p class="coment__text">
+                  I love visiting your cafe. You prepare the most delicious ice
+                  cream in Los Angeles! In addition, you have beautiful serving,
+                  cozy atmosphere and polite staff.
+                </p>
+              </div>
+
+              <ul class="points__elements">
+                <li class="point__sub__element"></li>
+                <li class="point__sub__element"></li>
+                <li class="point__sub__element"></li>
+              </ul>
+
+              <h3>Mila, New York </h3>
+
+              <ul class="bar__buttons">
+                <li class="button__container">
+                  <a href="#testimonial__first">
+                    <svg class="button__coment">
+                      <use href="./img/icons.svg#icon__button"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="button__container">
+                  <a href="#testimonial__second">
+                    <svg class="button__coment">
+                      <use href="./img/icons.svg#icon__button"></use>
+                    </svg>
+                  </a>
+                </li>
+
+                <li class="button__coment__home">
+                  <svg>
+                    <use href="./img/icons.svg#icon__coments__home"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------ Contacts Section ----- TERMINADA -->
+      <section id="contacts" class="contacts">
+        <div class="contacts__container">
+
+          <div class="contacts__target">
+            <h3 class="target__title target__title--cafe">CAFE</h3>
+            <h4 class="target__subtitle">Chicago</h4>
+            <p class="target__text">Handcrafted coffee, baked goods, and premium ice cream.</p>
+            <hr class="target__line">
+            <h4 class="target__subtitle">Monday - Friday</h4>
+            <p class="target__hour">06:00 AM - 10:00 PM</p>
+            <h4 class="target__subtitle">Saturday - Saturday</h4>
+            <p class="target__hour">08:00 AM - 16:00 PM</p>
+            <hr class="target__line">
+            <p class="target__text">+61(0) 383 766 284</p>
+            <p class="target__text">noreply@envato.com</p>
+          </div>
+
+          <div class="contacts__target">
+            <h3 class="target__title target__title--green">FOOD TRUCK</h3>
+            <h4 class="target__subtitle">Los Angeles</h4>
+            <p class="target__text">Fusion cuisine and refreshing ice cream made with passion.</p>
+            <hr class="target__line">
+            <h4 class="target__subtitle">Monday - Friday</h4>
+            <p class="target__hour">06:00 AM - 10:00 PM</p>
+            <h4 class="target__subtitle">Saturday - Saturday</h4>
+            <p class="target__hour">08:00 AM - 16:00 PM</p>
+            <hr class="target__line">
+            <p class="target__text">+61(0) 383 766 284</p>
+            <p class="target__text">noreply@envato.com</p>
+          </div>
+
+          <div class="contacts__target">
+            <h3 class="target__title target__title--cafe">CAFE</h3>
+            <h4 class="target__subtitle">New York</h4>
+            <p class="target__text">Specialty teas, artisanal pastries, mouth-watering ice cream.</p>
+            <hr class="target__line">
+            <h4 class="target__subtitle">Monday - Friday</h4>
+            <p class="target__hour">06:00 AM - 10:00 PM</p>
+            <h4 class="target__subtitle">Saturday - Saturday</h4>
+            <p class="target__hour">08:00 AM - 16:00 PM</p>
+            <hr class="target__line">
+            <p class="target__text">+61(0) 383 766 284</p>
+            <p class="target__text">noreply@envato.com</p>
+          </div>
+
+
+        </div>
+      </section>
     </main>
-    <footer></footer>
+
+    <!-- -----------Footer---------- TERMINADO -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__button">
+          <button class="button__red" type="button">Our Locations ></button>
+          <button class="button__white" type="button">Franchise ></button>
+        </div>
+
+        <div class="footer__info">
+          <div class="footer__text">
+            <h3 class="footer__text footer__text--small">
+              HOMEMADE ICE CREAM MADE
+            </h3>
+            <h2 class="footer__text footer__text--big">WITH PASSION</h2>
+          </div>
+
+          <div class="footer__contact">
+            <div class="contact__social">
+              <a class="social__link" href="#">
+                <svg class="social__icon">
+                  <use href="./img/icons.svg#icon-github"></use>
+                </svg>
+              </a>
+              <a class="social__link" href="#">
+                <svg class="social__icon">
+                  <use href="./img/icons.svg#icon-telegram"></use>
+                </svg>
+              </a>
+              <a class="social__link" href="#">
+                <svg class="social__icon">
+                  <use href="./img/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </div>
+            <div class="contact__phone">Feel free to contact <span class="phone--red">+61 (0) 383 766 284</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__copy">© 2022 - IceCream. All Rights Reserved.</div>
+      </div>
+    </footer>
+
+    <!-- ------------Mobile - menu  -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg
+          fill="currentColor"
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+      <button class="mobile-menu__buy-button" type="button" data-modal-open>
+        Buy now >
+      </button>
+      <ul class="mobile-menu">
+        <li><a href="#home" class="link">Home</a></li>
+        <li><a href="#products" class="link">About us</a></li>
+        <li><a href="#about" class="link">How it`s made?</a></li>
+        <li><a href="#advantages" class="link">Our products</a></li>
+        <li><a href="#contacs" class="link">Contact</a></li>
+      </ul>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

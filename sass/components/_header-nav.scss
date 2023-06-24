@@ -1,0 +1,33 @@
+.header__nav {
+  display: flex;
+  gap: 35px;
+
+  .header-nav__link {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: $color-white;
+  }
+
+  .header-nav__link:hover,
+  .header-nav__link:focus {
+    color: $color-primary;
+  }
+}
+
+// Media query 480----------------------------
+
+@include screen-480 {
+  .header-nav__link {
+    display: none;
+  }
+}
+
+// Media query 768----------------------------
+
+@include screen-768 {
+  .header-nav__link {
+    display: none;
+  }
+}
