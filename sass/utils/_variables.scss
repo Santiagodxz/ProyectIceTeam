@@ -1,4 +1,14 @@
-// --Colors--
+
+$color-text-black: #000000;
+$color-text-gray:   #907E82;
+$color-title-dark-pink: #D41443;
+$color-title-light-pink: #FFA5BA;
+$color-background:   #FFF5F6; 
+$color-backgraund-buttom: #ffffff;
+$color-button-hover:#ECEBEB;
+
+$container-padding: calc((100% - 1200px) / 2);
+
 
 $color-white: #ffffff;
 $color-black: #000000;
@@ -14,6 +24,7 @@ $color-coments-grey: #FAFAFA;
 $color-elements-coments-grey: #E1E1E1;
 $color-buttons-coments: #D9D9D9;
 $color-buttons-coments-hover: #C7133E;
+
 // Gallery variables
 $scale: 1.15;
 $duration: 1s;
