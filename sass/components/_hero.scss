@@ -1,13 +1,17 @@
 .hero {
   background-color: $color-hard-pink;
   width: 100%;
-  height: 664px;
-  position: relative;
+  height: 660px;
+
+
 
   .hero__container {
     @include flex(flex-start, space-between);
     @include container;
+    position: relative;
 
+
+    padding: 0;
     .hero__left-content {
       padding-top: 10%;
 
@@ -96,8 +100,7 @@
         margin-top: 108px;
 
         .icecream__img {
-          position: absolute;
-          bottom: 0;
+        padding-top: 10px
         }
       }
     }
@@ -126,9 +129,13 @@
     }
 
     .hero__tasty {
-      position: absolute;
-      bottom: 0;
-      right: 15px;
+      max-width: 1280px;
+
+      .tasty__img{
+        position: absolute;
+        bottom: -3%;
+        right: 15px;
+      }
     }
   }
 }
@@ -137,7 +144,9 @@
 
 @include screen-768 {
   .hero {
+    height: 100%;
     .hero__container {
+      @include container;
       .hero__left-content {
         .hero__title {
           margin-top: 50px;
@@ -186,6 +195,7 @@
           min-height: 335px;
           border-radius: 50%;
           margin-top: 50px;
+          margin-bottom: 16px;
 
           .icecream__img {
             min-width: 152px;
@@ -210,7 +220,13 @@
       }
 
       .hero__tasty {
-        width: 25%;
+        max-width: 1280px;
+  
+        .tasty__img{
+          position: absolute;
+          bottom: 0;
+          right: 15px;
+        }
       }
     }
   }
